@@ -12,7 +12,7 @@ A simple movie trailer website project for Udacity's full-stack [nanodegree prog
 For a demo, check out [https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.html !](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.html)
 
 ## Quick Start
-After downloading the project files, a movie trailer page can be created by importing media.py and fresh_tomatoes.py at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title,storyline, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with a list of the movie objects you created.
+After downloading the project files, a movie trailer page can be created by importing [media.py](.../movie/media.py) and [fresh_tomatoes.py](.../movie/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title,storyline, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with a list of the movie objects you created.
 
 ```
 import media
@@ -32,10 +32,10 @@ fresh_tomatoes.open_movies_page([toy_story])
 
 ```
 
-A more detailed example with multiple movie objects, which is used for the demo, can be found in entertainment_center.py
+A more detailed example with multiple movie objects, which is used for the [demo](#demo), can be found in [entertainment_center.py](.../movie/entertainment_center.py)
 
 ## Documentation
-The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in media.py.
+The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in [media.py](.../movie/media.py).
 **constructor method**
 The constructor method is called when a new Movie object is created and must include four arguments -- title, storyline, poster_url, and trailer_url. Each of these arguments is discussed further below.
 ```
@@ -66,11 +66,12 @@ movie.poster_url is a string containing a URL linking to an image which will be 
 
 movie.trailer_url is a string containing a URL linking to the movie trailer on YouTube.com. The movie trailer page portion of the this project extracts the YouTube id from the URL, so while links to other video services are valid in the Movie class object, they will not work with the movie trailers page.
 
-show_trailer method
+**show_trailer method**
+
 show_trailer can be called on any Movie class object to launch that object's movie trailer in a webpage. This method is useful for testing but is not used by the script that generates the finished movie trailers page.
 
 ## Movie Trailer Page Functions
-The functions used to create the final movie trailers page are located in fresh_tomatoes.py, along with HTML template variables used by these functions. This file must be imported to access the functions described below.
+The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](.../movie/fresh_tomatoes.py), along with HTML template variables used by these functions. This file must be imported to access the functions described below.
 
 **open_movies_page function**
 
@@ -92,6 +93,6 @@ The newly generated page will be placed in the same directory and named fresh_to
 
 ## Copyright and License
 
-* Project starter code (supplied without rights information) contributed by Udacity.
-* Additional code contributed by Kanika Goswami is offered under a Creative Commons Attribution 4.0 International License.
-* Background image by sethoscope used under Creative Coomons Attribution-NonCommercial-ShareAlike 2.0 Generic License (BY-NC-SA).
+* Project starter code (supplied without rights information) contributed by [Udacity](https://in.udacity.com).
+* Additional code contributed by Kanika Goswami is offered under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0)
+* Background image by [sethoscope](https://www.flickr.com/photos/sethoscope/2884743046) used under [Creative Coomons Attribution-NonCommercial-ShareAlike 2.0 Generic License (BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/2.0/deed.en).
