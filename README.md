@@ -36,7 +36,9 @@ A more detailed example with multiple movie objects, which is used for the [demo
 
 ## Documentation
 The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in [media.py](.../movie/media.py).
+
 **constructor method**
+
 The constructor method is called when a new Movie object is created and must include four arguments -- title, storyline, poster_url, and trailer_url. Each of these arguments is discussed further below.
 ```
 import media
