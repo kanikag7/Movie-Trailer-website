@@ -3,10 +3,10 @@ My project 1 under Udacity Naodegree Program of Full Stack Web Developer I.
 A simple movie trailer website project for Udacity's full-stack [nanodegree program](https://in.udacity.com/nanodegree). The project demonstrates the use of a Movie object class in Python to generate a static webpage, which displays a listing of favorite movies and links each movie to its trailers video on YouTube. The project also includes some CSS and jQuery involved in the display of the webpage.
 
 ## Table of contents
-* Demo(#demo)
-* Quick Start(#quick-start)
-* Documentation(#documentation)
-* Copyright and Licence(#copyright-and-licence)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [Copyright and Licence](#copyright-and-licence)
 
 ## Demo
 For a demo, check out [https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.html !](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.html)
@@ -50,16 +50,20 @@ movie_trailer_URL=https://www.youtube.com/watch?v=KYz2wyBy3kc`
 # Create Movie object
  toy_story= media.Movie(title,Storyline, poster_url, trailer_url)
  ```
-movie.title
+**movie.title**
+
 movie.title is any string used to identify the movie object.
 
-movie.storyline
+**movie.storyline**
+
 movie.storyline is any string used to identify the movie plot.
 
-movie.poster_url
+**movie.poster_url**
+
 movie.poster_url is a string containing a URL linking to an image which will be used to represent the Movie object, such as a movie poster or DVD box cover. The movie trailer page portion of this project displays these images with a width of 188px and a height of 292px. So, images with a ratio of 1:1.5 will work best.
 
-movie.trailer_url
+**movie.trailer_url**
+
 movie.trailer_url is a string containing a URL linking to the movie trailer on YouTube.com. The movie trailer page portion of the this project extracts the YouTube id from the URL, so while links to other video services are valid in the Movie class object, they will not work with the movie trailers page.
 
 show_trailer method
@@ -69,7 +73,9 @@ show_trailer can be called on any Movie class object to launch that object's mov
 The functions used to create the final movie trailers page are located in fresh_tomatoes.py, along with HTML template variables used by these functions. This file must be imported to access the functions described below.
 
 **open_movies_page function**
+
 To create the static movie trailers page the open_movies_page function must be called and supplied with one required argument (an array of Movie class objects) and one optional argument (a string specifying a sort order). If no sort order is specified or an unrecognized sort option is provided, the order the movies appear in the array will be used. Valid strings for specifying a sort order are:
+
 * "none" (no sort, default)
 * "alpha" (alphabetical by title)
 * "alpha-reverse" (reverse alphabetical by title)
@@ -85,6 +91,7 @@ fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "cron-reverse")
 The newly generated page will be placed in the same directory and named fresh_tomatoes.html. This new page relies on three files for its background image (img/curtains.jpg), CSS style settings (css/main.css), and jQuery effects (js/main.js).
 
 ## Copyright and License
+
 * Project starter code (supplied without rights information) contributed by Udacity.
 * Additional code contributed by Kanika Goswami is offered under a Creative Commons Attribution 4.0 International License.
 * Background image by sethoscope used under Creative Coomons Attribution-NonCommercial-ShareAlike 2.0 Generic License (BY-NC-SA).
