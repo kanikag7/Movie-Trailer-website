@@ -9,7 +9,7 @@ A simple movie trailer website project for Udacity's full-stack [nanodegree prog
 * [Copyright and Licence](#copyright-and-licence)
 
 ## Demo
-For a demo, check out [https://kanikag7.github.io/Movie-Trailer-website/fresh_tomatoes.html](https://kanikag7.github.io/Movie-Trailer-website/fresh_tomatoes.html)
+For a demo, check out [https://kanikag7.github.io/Movie-Trailer-website/fresh_tomatoes.html](https://kanikag7.github.io/blolb/master/Movie-Trailer-website/fresh_tomatoes.html)
 
 ## Quick Start
 After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/media.py) and [fresh_tomatoes.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title,storyline, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with a list of the movie objects you created.
