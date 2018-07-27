@@ -100,7 +100,7 @@ header h1 {
     transform: scale(1.1);
     cursor: pointer;
 }
-.movie-tile .year {
+.movie-tile .storyline {
     color: hsla(38,67%,81%,0.8);    
     letter-spacing: 0.125em
     margin: 1px auto;
