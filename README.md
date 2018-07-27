@@ -32,10 +32,10 @@ fresh_tomatoes.open_movies_page([toy_story])
 
 ```
 
-A more detailed example with multiple movie objects, which is used for the [demo](#demo), can be found in [entertainment_center.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/entertainment_center.py)
+A more detailed example with multiple movie objects, which is used for the [demo](#demo), can be found in [entertainment_center.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/entertainment_center.py)
 
 ## Documentation
-The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in [media.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/media.py).
+The Movie object class consists of four class variables, a simple constructor method, and a class method for playing a Movie object's movie trailer. The code is located in [media.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/media.py).
 
 **constructor method**
 
@@ -73,7 +73,7 @@ movie.trailer_url is a string containing a URL linking to the movie trailer on Y
 show_trailer can be called on any Movie class object to launch that object's movie trailer in a webpage. This method is useful for testing but is not used by the script that generates the finished movie trailers page.
 
 ## Movie Trailer Page Functions
-The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.py), along with HTML template variables used by these functions. This file must be imported to access the functions described below.
+The functions used to create the final movie trailers page are located in [fresh_tomatoes.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/fresh_tomatoes.py), along with HTML template variables used by these functions. This file must be imported to access the functions described below.
 
 **open_movies_page function**
 
