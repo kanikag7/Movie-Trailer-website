@@ -26,4 +26,3 @@ trailer_youtube= string telling URL of youtube
         """ Function to open movie trailer"""
         webbrowser.open(self.trailer_youtube_url)
 
-
