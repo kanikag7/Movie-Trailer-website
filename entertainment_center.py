@@ -43,3 +43,4 @@ movies = [toy_story, avatar, interstellar, transcendence,
 # use fresh_tomatoes.py to call the function open_movie_page
 # To add movies list to our web page and open it
 fresh_tomatoes.open_movies_page(movies)
+
