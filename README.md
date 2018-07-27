@@ -77,19 +77,14 @@ The functions used to create the final movie trailers page are located in [fresh
 
 **open_movies_page function**
 
-To create the static movie trailers page the open_movies_page function must be called and supplied with one required argument (an array of Movie class objects) and one optional argument (a string specifying a sort order). If no sort order is specified or an unrecognized sort option is provided, the order the movies appear in the array will be used. Valid strings for specifying a sort order are:
+To create the static movie trailers page the open_movies_page function must be called and supplied with one required argument (an array of Movie class objects).
 
-* "none" (no sort, default)
-* "alpha" (alphabetical by title)
-* "alpha-reverse" (reverse alphabetical by title)
-* "cron" (cronological by year)
-* "cron-reverse" (cronological by year)
 ```
 # Create movie trailer page with array of Movie class objects
 fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
 
-# Create page with movies sorted in reverse cronological order by year 
-fresh_tomatoes.open_movies_page([movie1, movie2, movie3], "cron-reverse")
+# Create page with movies
+fresh_tomatoes.open_movies_page([movie1, movie2, movie3])
 ```
 The newly generated page will be placed in the same directory and named fresh_tomatoes.html. This new page relies on three files for its background image (img/curtains.jpg), CSS style settings (css/main.css), and jQuery effects (js/main.js).
 
