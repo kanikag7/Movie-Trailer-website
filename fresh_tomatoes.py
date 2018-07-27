@@ -19,72 +19,7 @@ main_page_head = '''
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <style type="text/css" media="screen">
-        body {
-            padding-top: 80px;
-        }
-        #trailer .modal-dialog {
-            margin-top: 200px;
-            width: 640px;
-            height: 480px;
-        }
-        .hanging-close {
-            position: absolute;
-            top: -12px;
-            right: -12px;
-            z-index: 9001;
-        }
-        #trailer-video {
-            width: 100%;
-            height: 100%;
-        }
-        .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
-        }
-        .movie-tile:hover {
-            background-color: #EEE;
-            cursor: pointer;
-        }
-        .scale-media {
-            padding-bottom: 56.25%;
-            position: relative;
-        }
-        .scale-media iframe {
-            border: none;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            background-color: white;
-        }
-    </style>
-    <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $("#trailer-video-container").empty();
-        });
-        // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
-        });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
-            $(this).next("div").show("fast", showNext);
-          });
-        });
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 '''
 
@@ -118,6 +53,15 @@ main_page_content = '''
     <div class="container">
       {movie_tiles}
     </div>
+    <footer class="my-hidden">
+    <div class="content">
+        <div class="rights">copyright &copy; 2018 Kanika Goswami</div>
+        <div class="rights">licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+        <div class="rights">background image by <a href="https://www.flickr.com/photos/sethoscope/2884743046/" target="_blank">sethoscope</a>, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC BY-NC-SA 2.0</a></div>
+        <div>&bull; &bull; &bull;</div>
+        <div class="disclaimer">All webpages appearing in this work are fictitious and for demostration purposes only. Any resemblance to real websites, living or dead, is purely coincidental.</div>
+    </div>  
+</footer>
   </body>
 </html>
 '''
@@ -125,9 +69,12 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="col-md-6 col-lg-4 movie-tile text-center">
+<div class="movie-img" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
+    </div>
     <h2>{movie_title}</h2>
+    <div class="storyline>{storyline}</div>
 </div>
 '''
 
