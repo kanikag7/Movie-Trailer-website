@@ -9,30 +9,30 @@ video trailer of the movie"""
 
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life",
-                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",  # noqa
                         "https://www.youtube.com/watch?v=KYz2wyBy3kc")
 
 avatar = media.Movie("Avatar", "A marine on an alien planet",
-                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
+                     "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",  # noqa
                      "https://www.youtube.com/watch?v=5PSNL1qE6VY")
 
 interstellar = media.Movie("Interstellar", "A science finction epic film",
-                           "http://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+                           "http://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",  # noqa
                            "https://www.youtube.com/watch?v=zSWdZVtXT7E")
 
 transcendence = media.Movie("Transcendence",
-                            "A science fiction film directed by cinematographer Wally Pfister",
-                            "http://upload.wikimedia.org/wikipedia/en/e/ef/Transcendence2014Poster.jpg",
+                            "A science fiction film directed by cinematographer Wally Pfister",  # noqa
+                            "http://upload.wikimedia.org/wikipedia/en/e/ef/Transcendence2014Poster.jpg",  # noqa
                             "https://www.youtube.com/watch?v=VCTen3-B8GU")
 
 the_lego_movie = media.Movie("The Lego Movie",
                              "A 2014 computer animated adventure comedy film",
-                             "http://upload.wikimedia.org/wikipedia/en/1/10/The_Lego_Movie_poster.jpg",
+                             "http://upload.wikimedia.org/wikipedia/en/1/10/The_Lego_Movie_poster.jpg",  # noqa
                              "https://www.youtube.com/watch?v=fZ_JOBCLF-I")
 
 big_hero_6 = media.Movie("Big Hero 6",
-                         "A 2014 American 3D computer-animated superhero action comedy film",
-                         "http://upload.wikimedia.org/wikipedia/en/4/4b/Big_Hero_6_%28film%29_poster.jpg",
+                         "A 2014 American 3D computer-animated superhero action comedy film",  # noqa
+                         "http://upload.wikimedia.org/wikipedia/en/4/4b/Big_Hero_6_%28film%29_poster.jpg",  # noqa
                          "https://www.youtube.com/watch?v=z3biFxZIJOQ")
 
 
