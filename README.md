@@ -14,7 +14,7 @@ A simple movie trailer website project for Udacity's full-stack [nanodegree prog
 For a demo, check out <http://kanikag7.github.io/Movie-Trailer-website/fresh_tomatoes.html>!
 
 ## Quick Start
-After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/media.py) and [fresh_tomatoes.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with four arguments -- title,storyline, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with a list of the movie objects you created.
+After downloading the project files, a movie trailer page can be created by importing [media.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/media.py) and [fresh_tomatoes.py](https://github.com/kanikag7/Movie-Trailer-website/blob/master/movie/fresh_tomatoes.py) at the start of your Python script. Then create idividual Movie objects by calling media.Movie() and supplying it with arguments -- title, poster_url, and trailer_url. Lastly, to generate the movie trailers page, call fresh_tomatoes.open_movies_page() and supply it with a list of the movie objects you created.
 
 ```
 import media
@@ -22,12 +22,11 @@ import fresh_tomatoes
 
 #information for object arguments
 title=Toy Story
-storyline=A story of a boy and his toys that come to life
 poster_image_URL=http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg
 movie_trailer_URL=https://www.youtube.com/watch?v=KYz2wyBy3kc`
 
 # Create Movie object
- toy_story= media.Movie(title,Storyline, poster_url, trailer_url)
+ toy_story= media.Movie(title, poster_url, trailer_url)
 
 # Create movie trailer page with array of one movie
 fresh_tomatoes.open_movies_page([toy_story])
@@ -41,26 +40,21 @@ The Movie object class consists of four class variables, a simple constructor me
 
 **constructor method**
 
-The constructor method is called when a new Movie object is created and must include four arguments -- title, storyline, poster_url, and trailer_url. Each of these arguments is discussed further below.
+The constructor method is called when a new Movie object is created and must include arguments -- title, poster_url, and trailer_url. Each of these arguments is discussed further below.
 ```
 import media
 
 #information for object arguments
 title=Toy Story
-storyline=A story of a boy and his toys that come to life
 poster_image_URL=http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg
 movie_trailer_URL=https://www.youtube.com/watch?v=KYz2wyBy3kc`
 
 # Create Movie object
- toy_story= media.Movie(title,Storyline, poster_url, trailer_url)
+ toy_story= media.Movie(title, poster_url, trailer_url)
  ```
 **movie.title**
 
 movie.title is any string used to identify the movie object.
-
-**movie.storyline**
-
-movie.storyline is any string used to identify the movie plot.
 
 **movie.poster_url**
 
