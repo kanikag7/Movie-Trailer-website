@@ -12,7 +12,7 @@ main_page_head = '''
     <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800">  
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -31,7 +31,7 @@ main_page_content = '''
     <div class="modal" id="trailer">
       <div class="modal-dialog">
         <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">  
             <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
@@ -41,15 +41,12 @@ main_page_content = '''
     </div>
 
     <!-- Main Page Content -->
-    <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#"><h1>Fresh Tomatoes Movie Trailers</h1></a>
-          </div>
-        </div>
-      </div>
+<header>
+    <div class="content">
+        <h1>Fresh Tomatoes Movie Trailers</h1>
     </div>
+</header>
+
     <div class="container">
       {movie_tiles}
     </div>
@@ -70,11 +67,10 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center">
-<div class="movie-img" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+<div class="movie-img" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">  
     <img src="{poster_image_url}" width="220" height="342">
     </div>
     <h2>{movie_title}</h2>
-    <div class="storyline>{storyline}</div>
 </div>
 '''
 
@@ -94,7 +90,6 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
-            storyline=movie.storyline,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
